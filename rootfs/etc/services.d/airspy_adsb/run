@@ -106,6 +106,8 @@ if [[ "${AIRSPY_ADSB_VERBOSE^^}" == "TRUE" ]]; then
     AIRSPY_ADSB_CMD+=("-v")
 fi
 
+AIRSPY_ADSB_CMD+=("-S /run/airspy_adsb/stats.json")
+
 # Handle architecture
 if [[ -z "$AIRSPY_ADSB_ARCH" ]]; then
 
